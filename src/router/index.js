@@ -28,8 +28,9 @@ const routes = [
 
 // Создаем маршрутизатор
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
+
 
 export default router
