@@ -29,7 +29,7 @@ const addToCart = (e) => {
 }
 
 const imageUrl = computed(() => {
-    return props.product.img || 'src/images/NOPHOTO.svg'
+    return props.product.img
 })
 
 </script>
@@ -38,7 +38,7 @@ const imageUrl = computed(() => {
     <div class="product-card" @click="goToProductDetail">
         <div class="product-image">
             <a class="card-image">
-                <img :src="imageUrl || '/src/images/NOPHOTO.svg'" :alt="product.name" class="image">
+                <img :src="imageUrl || '../src/images/NOPHOTO.svg'" :alt="product.name" class="image">
             </a>
         </div>
         <div class="product-info">
@@ -244,4 +244,5 @@ const imageUrl = computed(() => {
         margin-left: 0;
     }
 }
+
 </style>
