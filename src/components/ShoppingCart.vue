@@ -63,7 +63,7 @@ const updateQuantity = (id, quantity) => {
     <div v-else>
       <div class="cart-items">
         <div v-for="item in cartItems" :key="item.id" class="cart-item">
-          <img class="item-img" :src="item.img || '/src/images/NOPHOTO.svg'" :alt="item.name">
+          <img class="item-img" :src="item.img || '../src/images/NOPHOTO.svg'" :alt="item.name">
           <div class="item-title-button">
             <h4 class="item-title">{{ item.name }}</h4>
             <div class="item-button">
@@ -342,4 +342,5 @@ const updateQuantity = (id, quantity) => {
     border-radius: 6px;
   }
 }
+
 </style>
