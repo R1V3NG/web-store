@@ -165,36 +165,6 @@ const handleAddToCart = async (product) => {
     margin-bottom: 20px;
 }
 
-.filter-select {
-    padding: 15px 20px 15px 20px;
-    background-color: white;
-    border: 1px solid var(--primary-color);
-    border-radius: 4px;
-    color: var(--text-color);
-    font-size: 15px;
-    min-width: 180px;
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='000' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    background-size: 16px;
-    padding-right: 45px;
-}
-
-.filter-select:focus-visible {
-    outline: 1px solid var(--accent);
-}
-
-.filter-option {
-    background-color: white;
-    color: var(--primary-color);
-}
-
-.filter-option:checked {
-    font-weight: bold;
-}
-
 .loading-full {
     display: flex;
     flex-direction: column;

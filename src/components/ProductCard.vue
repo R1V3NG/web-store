@@ -244,5 +244,4 @@ const imageUrl = computed(() => {
         margin-left: 0;
     }
 }
-
 </style>

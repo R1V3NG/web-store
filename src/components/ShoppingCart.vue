@@ -342,5 +342,4 @@ const updateQuantity = (id, quantity) => {
     border-radius: 6px;
   }
 }
-
 </style>

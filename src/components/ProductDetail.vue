@@ -280,5 +280,4 @@ const addToCart = () => {
         font-size: 22px;
     }
 }
-
 </style>

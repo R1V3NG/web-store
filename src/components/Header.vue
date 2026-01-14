@@ -123,5 +123,4 @@ const cartItemCount = computed(() => {
   cursor: pointer;
   font-size: 24px;
 }
-
 </style>
