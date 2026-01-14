@@ -52,7 +52,7 @@ const addToCart = () => {
         <div v-else-if="product" class="product-detail-container">
             <div class="product-image-container">
                 <div class="product-image">
-                    <img :src="product.img || '/src/images/NOPHOTO.svg'" :alt="product.name">
+                    <img :src="product.img || '../src/images/NOPHOTO.svg'" :alt="product.name">
                 </div>
             </div>
             <div class="product-info-container">
@@ -280,4 +280,5 @@ const addToCart = () => {
         font-size: 22px;
     }
 }
+
 </style>
