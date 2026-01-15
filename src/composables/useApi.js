@@ -1,7 +1,7 @@
 import { ref } from 'vue'
 
-const API_KEY = '8R2S3r3aR5KIb2zR'
-const BASE_URL = 'https://nti.urfu.ru/api_exam'
+const API_KEY = import.meta.env.VITE_API_KEY
+const BASE_URL = import.meta.env.VITE_API_URL
 
 export const useApi = () => {
   const loading = ref(false)
@@ -21,7 +21,7 @@ export const useApi = () => {
         method: 'GET',
         headers: { 'Accept': 'application/json' }
       })
-      
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`)
       }
@@ -62,7 +62,7 @@ export const useApi = () => {
     }
   }
 
-// Получить товар по id
+  // Получить товар по id
   const fetchProduct = async (id) => {
     const data = await fetchData(`/product/${id}`)
     return data

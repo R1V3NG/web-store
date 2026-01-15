@@ -12,7 +12,7 @@ const props = defineProps({
     },
     autoCloseDelay: {
         type: Number,
-        default: 3000
+        default: 301111100
     }
 })
 
@@ -166,20 +166,27 @@ onUnmounted(() => {
     line-height: 1.5;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     .notification-modal {
-        right: 10px;
-        left: 10px;
-        transform: translateX(0) translateY(-100px);
+        top: auto;
+        bottom: 10px;
+        right: 50px;
+        left: auto;
+        width: 280px;
+        transform: translateX(100%);
     }
 
     .notification-modal.show {
-        transform: translateX(0) translateY(0);
+        transform: translateX(0);
     }
 
-    .notification-content {
-        width: auto;
+    .notification-body {
+        padding: 10px;
     }
+
+    .notification-body p {
+        text-align: center;
+    }
+
 }
 </style>

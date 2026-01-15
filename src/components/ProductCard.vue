@@ -38,7 +38,7 @@ const imageUrl = computed(() => {
     <div class="product-card" @click="goToProductDetail">
         <div class="product-image">
             <a class="card-image">
-                <img :src="imageUrl || '../src/images/NOPHOTO.svg'" :alt="product.name" class="image">
+                <img :src="imageUrl || '../web-store/assets/images/NOPHOTO.svg'" :alt="product.name" class="image">
             </a>
         </div>
         <div class="product-info">

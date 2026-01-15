@@ -21,7 +21,7 @@ const cartItemCount = computed(() => {
 </script>
 
 <template>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../web-store/css/style.css">
   <header class="header">
     <div class="header-container">
       <div class="logo" @click="goToHome">
